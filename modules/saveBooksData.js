@@ -36,7 +36,7 @@ export class BookCollection {
         title: title.value,
         author: author.value,
       };
-      
+
       if (title.value.length && author.value.length > 0) {
         this.booksStore.push(bookDescription);
         localStorage.setItem('data', JSON.stringify(this.booksStore));

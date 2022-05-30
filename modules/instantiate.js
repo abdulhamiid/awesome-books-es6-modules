@@ -1,4 +1,4 @@
-import { BookCollection } from "./saveBooksData.js";
+import { BookCollection } from './saveBooksData.js';
 
 const bookTitle = document.querySelector('#title');
 const bookAuthor = document.querySelector('#author');
@@ -11,4 +11,4 @@ export const createBook = () => {
   Book1.saveData();
   Book1.removeData();
   Book1.existingData();
-}
+};

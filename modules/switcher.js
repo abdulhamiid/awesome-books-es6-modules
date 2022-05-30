@@ -12,4 +12,4 @@ export const pageSwitcher = () => {
       nextPage.classList.add('is-Active');
     });
   }
-}
+};
