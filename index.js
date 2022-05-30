@@ -5,4 +5,5 @@ import { currentDate } from "./modules/date.js";
 
 createBook();
 currentDate();
+setInterval(currentDate, 1000);
 pageSwitcher();
