@@ -1,6 +1,6 @@
 const switcher = document.querySelectorAll('[data-switcher]');
 
-export const pageSwitcher = () => {
+const pageSwitcher = () => {
   for (let i = 0; i < switcher.length; i += 1) {
     const dataSwitch = switcher[i];
     const pageId = dataSwitch.dataset.tab;
@@ -13,3 +13,5 @@ export const pageSwitcher = () => {
     });
   }
 };
+
+export default pageSwitcher;

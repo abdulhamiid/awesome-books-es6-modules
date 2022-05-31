@@ -1,6 +1,8 @@
 const bookList = document.querySelector('.book-list');
 
-export class BookCollection {
+const form = document.querySelector('#form');
+
+export default class BookCollection {
   constructor(title, author, booksStore) {
     this.title = title;
     this.author = author;
