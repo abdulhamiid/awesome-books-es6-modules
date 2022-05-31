@@ -21,9 +21,8 @@ li {
 
 body {
   margin: 0;
-  padding: 0;
   font-family: cursive;
-  height: 100vh;;
+  height: 100vh;
   padding: 10px;
   width: 100%;
 }
@@ -60,7 +59,6 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3px 10px;
   margin-left: -40px;
   font-size: 23px;
   padding: 5px 20px;
@@ -93,27 +91,6 @@ main {
 .book-list li button:hover,
 #add:hover {
   cursor: pointer;
-}
-
-/* navbar */
-#nav-list {
-  display: flex;
-  align-items: center;
-}
-
-#nav-list li {
-  width: 100px;
-  height: 80%;
-  border-right: 2px solid #000;
-}
-
-#nav-list li:last-child {
-  border: none;
-}
-
-nav a {
-  color: #000;
-  text-decoration: none;
 }
 
 #form {
@@ -159,6 +136,7 @@ nav .is-Active {
 #contact-info h2 {
   margin: 50px 0;
 }
+
 #contact-info p,
 #contact-info ul {
   text-align: left;
@@ -170,4 +148,25 @@ nav .is-Active {
 
 footer {
   font-weight: 800;
+}
+
+/* navbar */
+#nav-list {
+  display: flex;
+  align-items: center;
+}
+
+#nav-list li {
+  width: 100px;
+  height: 80%;
+  border-right: 2px solid #000;
+}
+
+#nav-list li:last-child {
+  border: none;
+}
+
+nav a {
+  color: #000;
+  text-decoration: none;
 }
