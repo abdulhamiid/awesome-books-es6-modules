@@ -170,3 +170,30 @@ nav a {
   color: #000;
   text-decoration: none;
 }
+
+@media(max-width: 768px) {
+  nav i {
+    font-size: 30px;
+    font-weight: bold;
+  }
+
+  nav h2 {
+    display: none;
+  }
+
+  #form {
+    width:100%;
+  }
+
+  #nav-list {
+    padding: 0;
+  }
+
+  #nav-list li {
+    padding: 0 5px;
+  }
+
+  #date {
+    font-size: 13px;
+  }
+}
