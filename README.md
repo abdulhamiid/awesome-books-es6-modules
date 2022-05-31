@@ -1,7 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
-Awesome Books ES6
+# Awesome Books ES6
 
 > In this project, I build a basic website that allows users to add/remove books from a list. using ES6 syntax and make it more organized by using Javascript modules.
 
