@@ -9,47 +9,62 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body class="flex-column">
+  
+  <!-- navbar -->
+  <nav id="navbar" class="flex">
+    <h1 id="logo">Awesome Books</h1>
+    <i class="bi bi-book"></i>
+    <ul id="nav-list" class="flex">
+      <li class="tab is-Active"><a href="#"  data-switcher data-tab="1">List</a></li>
+      <li class="tab "><a href="#" data-switcher data-tab="2">Add new</a></li>
+      <li class="tab "><a href="#" data-switcher data-tab="3">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- main content -->
   <main class="main">
-    <nav id="navbar" class="flex">
-      <h2 id="logo">Awesome Books</h2>
-      <i class="bi bi-book"></i>
-      <ul id="nav-list" class="flex">
-        <li class="tab is-Active"><a href="#"  data-switcher data-tab="1">List</a></li>
-        <li class="tab "><a href="#" data-switcher data-tab="2">Add new</a></li>
-        <li class="tab "><a href="#" data-switcher data-tab="3">Contact</a></li>
-      </ul>
-    </nav>
-    <p id="date"></p>
-    <section class="home-page ">
+    <div class="home-page ">
+
+      <!-- date placeholder -->
+      <p class="date flex"></p>
+
       <!-- first-page -->
-      <div class="content page is-Active" data-page="1" >
+
+      <section class="content page is-Active" data-page="1" >
         <h1 class="head">All Awesome books</h1>
-        <ul class="book-list " ></ul>
-      </div>
+        <ul class="book-list"></ul>
+      </section>
+
       <!-- second-page -->
-      <div class="form-data page" data-page="2">
-        <h2>Add a New Book</h2>
+      <section class="form-data page" data-page="2">
+        <h1>Add a New Book</h1>
         <form action="#" id="form" class="flex-column">
           <input type="text" placeholder="Title" id="title">
           <input type="text" placeholder="Author" id="author">
           <button type="submit" id="add">Add</button>
         </form>
-      </div>
+      </section>
+
       <!-- third page -->
-      <div id="contact-info" class="form-data page" data-page="3">
-        <h2>Contact Information</h2>
+      <section id="contact-info" class="form-data page" data-page="3">
+        <h1>Contact Information</h1>
         <p>Do have any Question or you want to say "Hello"?<br>You can reach out to us!</p>
         <ul>
           <li>Our e-mail: awesomebooksstore@gmail.com</li>
           <li>Our Phone Number: +2348143783218</li>
           <li>Our Address: PO BOX 23456-34000</li>
         </ul>
-      </div>
-    </section>
+      </section>
+    </div>
+
   </main>
+
+  <!-- footer -->
   <footer class="flex">
     <p>Copyright &copy; abdulhamidadio 2022</p>
   </footer>
+
+  <!-- script -->
   <script type="module" src="index.js"></script>
 </body>
 </html>
