@@ -9,43 +9,44 @@
   <link rel="stylesheet" href="index.css">
 </head>
 <body class="flex-column">
-  <main class="main">
-
-    <!-- navbar -->
-    <nav id="navbar" class="flex">
+  <!-- navbar -->
+  <nav id="navbar" class="flex">
+    <header>
       <h1 id="logo">Awesome Books</h1>
-      <i class="bi bi-book"></i>
-      <ul id="nav-list" class="flex">
-        <li class="tab is-Active"><a href="#"  data-switcher data-tab="1">List</a></li>
-        <li class="tab "><a href="#" data-switcher data-tab="2">Add new</a></li>
-        <li class="tab "><a href="#" data-switcher data-tab="3">Contact</a></li>
-      </ul>
-    </nav>
+    </header>
+    <i class="bi bi-book"></i>
+    <ul id="nav-list" class="flex">
+      <li class="tab is-Active"><a href="#"  data-switcher data-tab="1">List</a></li>
+      <li class="tab "><a href="#" data-switcher data-tab="2">Add new</a></li>
+      <li class="tab "><a href="#" data-switcher data-tab="3">Contact</a></li>
+    </ul>
+  </nav>
 
-    <!-- main content -->
+  <!-- main -->
+  <main class="main">
     <div class="home-page ">
       <!-- first-page -->
 
       <!-- date placeholder -->
       <p class="date flex"></p>
 
-      <section class="content page is-Active" data-page="1" >
+      <div class="content page is-Active" data-page="1" >
         <h1 class="head">All Awesome books</h1>
         <ul class="book-list"></ul>
-      </section>
+      </div>
 
       <!-- second-page -->
-      <section class="form-data page" data-page="2">
+      <div class="form-data page" data-page="2">
         <h1>Add a New Book</h1>
         <form action="#" id="form" class="flex-column">
           <input type="text" placeholder="Title" id="title">
           <input type="text" placeholder="Author" id="author">
           <button type="submit" id="add">Add</button>
         </form>
-      </section>
+      </div>
 
       <!-- third page -->
-      <section id="contact-info" class="form-data page" data-page="3">
+      <div id="contact-info" class="form-data page" data-page="3">
         <h1>Contact Information</h1>
         <p>Do have any Question or you want to say "Hello"?<br>You can reach out to us!</p>
         <ul>
@@ -53,7 +54,7 @@
           <li>Our Phone Number: +2348143783218</li>
           <li>Our Address: PO BOX 23456-34000</li>
         </ul>
-      </section>
+      </div>
     </div>
 
   </main>
