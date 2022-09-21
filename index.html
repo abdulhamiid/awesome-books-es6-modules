@@ -13,8 +13,14 @@
 
     <!-- navbar -->
     <nav id="navbar" class="flex">
-      <h1 id="logo">Awesome Books</h1>
-      <i class="bi bi-book"></i>
+      <header>
+        <a href="#" data-switcher data-tab="1" id="logo">Awesome Books</a>
+      </header>
+
+      <!-- bookstore logo in mobile view -->
+      <i class="bi bi-book" data-switcher data-tab="1" ></i>
+
+      <!-- navbar links -->
       <ul id="nav-list" class="flex">
         <li class="tab is-Active"><a href="#"  data-switcher data-tab="1">List</a></li>
         <li class="tab "><a href="#" data-switcher data-tab="2">Add new</a></li>
@@ -36,7 +42,7 @@
 
       <!-- second-page -->
       <section class="form-data page" data-page="2">
-        <h1>Add a New Book</h1>
+        <h2>Add a New Book</h2>
         <form action="#" id="form" class="flex-column">
           <input type="text" placeholder="Title" id="title">
           <input type="text" placeholder="Author" id="author">
@@ -46,7 +52,7 @@
 
       <!-- third page -->
       <section id="contact-info" class="form-data page" data-page="3">
-        <h1>Contact Information</h1>
+        <h2>Contact Information</h2>
         <p>Do have any Question or you want to say "Hello"?<br>You can reach out to us!</p>
         <ul>
           <li>Our e-mail: awesomebooksstore@gmail.com</li>
