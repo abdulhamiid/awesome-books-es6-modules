@@ -178,6 +178,10 @@ nav i {
     font-weight: bold;
   }
 
+  #logo {
+    display: none;
+  }
+  
   nav h2 {
     display: none;
   }
