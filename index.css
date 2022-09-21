@@ -148,6 +148,11 @@ footer {
 }
 
 /* navbar */
+#logo {
+  font-size: 25px;
+  color: #000;
+}
+
 #nav-list {
   align-items: center;
 }
@@ -167,7 +172,7 @@ nav a {
   text-decoration: none;
 }
 
-nav i {
+.bi-book {
   display: none;
 }
 
@@ -182,8 +187,8 @@ nav i {
     display: none;
   }
 
-  nav h2 {
-    display: none;
+  .bi-book {
+    display: block;
   }
 
   #form {
