@@ -20,6 +20,7 @@
   },
   "ignorePatterns": [
     "dist/",
+    "luxon.js",
     "build/"
   ]
 }

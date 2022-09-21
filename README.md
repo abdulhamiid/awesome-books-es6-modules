@@ -37,7 +37,7 @@ Open the ```index.html``` on your Browser
 
 - GitHub: [@githubhandle](https://github.com/abdulhamiid)
 - Twitter: [@twitterhandle](https://twitter.com/abdulhamid_adio)
-- LinkedIn: [LinkedIn](https://linkedin.com/)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/abdulhamid-adio)
 
 ## 🤝 Contributing
 

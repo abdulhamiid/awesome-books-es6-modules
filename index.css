@@ -39,9 +39,8 @@ footer {
   height: 40px;
 }
 
-#date {
-  display: flex;
-  flex-direction: row-reverse;
+.date {
+  justify-content: right;
 }
 
 main {
@@ -53,18 +52,16 @@ main {
   width: 100%;
 }
 
-.book-list li {
+.book-list > li {
   list-style: none;
   background-color: gainsboro;
-  display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-left: -40px;
   font-size: 23px;
   padding: 5px 20px;
 }
 
-.book-list li p {
+.book-list > li p {
   margin: 0;
 }
 
@@ -152,7 +149,6 @@ footer {
 
 /* navbar */
 #nav-list {
-  display: flex;
   align-items: center;
 }
 
@@ -180,6 +176,10 @@ nav i {
     display: block;
     font-size: 30px;
     font-weight: bold;
+  }
+
+  #logo {
+    display: none;
   }
 
   nav h2 {

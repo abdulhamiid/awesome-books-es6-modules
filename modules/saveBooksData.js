@@ -1,5 +1,4 @@
 const bookList = document.querySelector('.book-list');
-
 const form = document.querySelector('#form');
 
 export default class BookCollection {
@@ -20,10 +19,10 @@ export default class BookCollection {
     // displaying data in the ui
     this.booksStore.forEach((item) => {
       bookList.innerHTML += `
-     <li class="book" id ="${item.title}">
-     <p>"${item.title}" <span>By</span> <span> ${item.author}</span></p>
-     <button type="button" class="remove">Remove</button>
-    </li>
+      <li class="flex book" id ="${item.title}">
+      <p>"${item.title}" <span>By</span> <span> ${item.author}</span></p>
+      <button type="button" class="remove">Remove</button>
+      </li>
  `;
     });
   }
@@ -44,7 +43,7 @@ export default class BookCollection {
         localStorage.setItem('data', JSON.stringify(this.booksStore));
         const lastBook = this.booksStore[this.booksStore.length - 1];
         bookList.innerHTML += `
-      <li class="book" id ="${lastBook.title}">
+      <li class="book flex" id ="${lastBook.title}">
             <p>"${lastBook.title}" <span>By </span> <span> ${lastBook.author}</span></p>
             <button type="button" class="remove">Remove</button>
        </li>
@@ -59,7 +58,7 @@ export default class BookCollection {
     document.querySelector('.book-list').addEventListener('click', (e) => {
       if (e.target.classList.contains('remove')) {
         e.target.parentElement.remove();
-        const { id } = e.path[1];
+        const { id } = e.target.parentElement;
         for (let a = 0; a < this.booksStore.length; a += 1) {
           if (this.booksStore[a].title === id) {
             this.booksStore.splice(a, 1);
